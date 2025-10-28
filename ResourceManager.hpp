@@ -10,7 +10,9 @@ ResourceManager() {
     bernard = new Resource();
 }
 ResourceManager(const ResourceManager& other) {
-    bernard = new Resource(*other.bernard);
+        if (other.bernard != nullptr) {
+            bernard = new Resource(*other.bernard);
+        }
 }
 
 ResourceManager(ResourceManager&& other) noexcept {
