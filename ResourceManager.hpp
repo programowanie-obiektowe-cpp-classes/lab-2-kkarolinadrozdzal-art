@@ -22,12 +22,16 @@ ResourceManager(ResourceManager&& other) noexcept {
 
 ResourceManager& operator=(const ResourceManager& other)
 {
-    if (this != &other)
-    {
-        delete bernard;
-        bernard = new Resource(*other.bernard);
-    }
-    return *this;
+    i if (this != &other)
+ {
+     if (bernard != nullptr)
+     {
+         delete bernard;
+     }
+         bernard = new Resource(*other.bernard);
+     
+ }
+ return *this;
 }
 ResourceManager& operator=(ResourceManager& other) noexcept
 {
