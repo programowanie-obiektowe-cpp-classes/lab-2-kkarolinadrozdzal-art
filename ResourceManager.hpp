@@ -3,7 +3,8 @@
 #include "Resource.hpp"
 
 class ResourceManager
-{
+{ 
+public:
     Resource * bernard;
 ResourceManager() {
     bernard = new Resource();
