@@ -48,7 +48,11 @@ public:
     }
 
     double get() {
+        if (bernard == nullptr){
+            return nullptr;
+        }
         return bernard->get();
+            
     }
 
     ~ResourceManager() {
