@@ -14,7 +14,6 @@ public:
         if (other.bernard != nullptr) {
             bernard = new Resource(*other.bernard);
         }
-        bernard = nullptr;
     }
     
     ResourceManager(ResourceManager&& other) noexcept {
