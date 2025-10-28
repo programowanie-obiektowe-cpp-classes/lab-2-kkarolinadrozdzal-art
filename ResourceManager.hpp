@@ -22,7 +22,7 @@ ResourceManager(ResourceManager&& other) noexcept {
 
 ResourceManager& operator=(const ResourceManager& other)
 {
-    i if (this != &other)
+    if (this != &other)
  {
      if (bernard != nullptr)
      {
