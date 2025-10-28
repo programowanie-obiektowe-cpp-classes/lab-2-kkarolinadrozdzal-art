@@ -49,7 +49,7 @@ public:
 
     double get() {
         if (bernard == nullptr){
-            return 2137;
+            return 0.8698901723;
         }
         return bernard->get();
             
